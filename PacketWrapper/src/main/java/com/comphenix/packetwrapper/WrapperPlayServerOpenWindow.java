@@ -42,6 +42,7 @@ public class WrapperPlayServerOpenWindow extends AbstractPacket {
      * Retrieve Window id.
      * <p>
      * Notes: a unique id number for the window to be displayed. Notchian server implementation is a counter, starting at 1.
+     *
      * @return The current Window id
      */
     public int getWindowID() {
@@ -50,6 +51,7 @@ public class WrapperPlayServerOpenWindow extends AbstractPacket {
 
     /**
      * Set Window id.
+     *
      * @param value - new value.
      */
     public void setWindowID(int value) {
@@ -60,6 +62,7 @@ public class WrapperPlayServerOpenWindow extends AbstractPacket {
      * Retrieve Inventory Type.
      * <p>
      * Notes: the window type to use for display. Check below
+     *
      * @return The current Inventory Type
      */
     public String getInventoryType() {
@@ -68,6 +71,7 @@ public class WrapperPlayServerOpenWindow extends AbstractPacket {
 
     /**
      * Set Inventory Type.
+     *
      * @param value - new value.
      */
     public void setInventoryType(String value) {
@@ -78,6 +82,7 @@ public class WrapperPlayServerOpenWindow extends AbstractPacket {
      * Retrieve Window title.
      * <p>
      * Notes: the title of the window.
+     *
      * @return The current Window title
      */
     public WrappedChatComponent getWindowTitle() {
@@ -86,6 +91,7 @@ public class WrapperPlayServerOpenWindow extends AbstractPacket {
 
     /**
      * Set Window title.
+     *
      * @param value - new value.
      */
     public void setWindowTitle(WrappedChatComponent value) {
@@ -96,6 +102,7 @@ public class WrapperPlayServerOpenWindow extends AbstractPacket {
      * Retrieve Number of Slots.
      * <p>
      * Notes: number of slots in the window (excluding the number of slots in the player inventory).
+     *
      * @return The current Number of Slots
      */
     public int getNumberOfSlots() {
@@ -104,6 +111,7 @@ public class WrapperPlayServerOpenWindow extends AbstractPacket {
 
     /**
      * Set Number of Slots.
+     *
      * @param value - new value.
      */
     public void setNumberOfSlots(int value) {
@@ -114,6 +122,7 @@ public class WrapperPlayServerOpenWindow extends AbstractPacket {
      * Retrieve Entity ID.
      * <p>
      * Notes: entity's ID
+     *
      * @return The current Entity ID
      */
     public int getEntityID() {
@@ -122,6 +131,7 @@ public class WrapperPlayServerOpenWindow extends AbstractPacket {
 
     /**
      * Set Entity ID.
+     *
      * @param value - new value.
      */
     public void setEntityID(int value) {
@@ -130,6 +140,7 @@ public class WrapperPlayServerOpenWindow extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param world - the current world of the entity.
      * @return The spawned entity.
      */
@@ -139,6 +150,7 @@ public class WrapperPlayServerOpenWindow extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param event - the packet event.
      * @return The spawned entity.
      */

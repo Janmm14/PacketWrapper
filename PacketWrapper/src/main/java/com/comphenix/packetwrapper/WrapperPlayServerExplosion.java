@@ -38,6 +38,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 
     /**
      * Retrieve X.
+     *
      * @return The current X
      */
     public double getX() {
@@ -46,6 +47,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 
     /**
      * Set X.
+     *
      * @param value - new value.
      */
     public void setX(double value) {
@@ -54,6 +56,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 
     /**
      * Retrieve Y.
+     *
      * @return The current Y
      */
     public double getY() {
@@ -62,6 +65,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 
     /**
      * Set Y.
+     *
      * @param value - new value.
      */
     public void setY(double value) {
@@ -70,6 +74,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 
     /**
      * Retrieve Z.
+     *
      * @return The current Z
      */
     public double getZ() {
@@ -78,6 +83,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 
     /**
      * Set Z.
+     *
      * @param value - new value.
      */
     public void setZ(double value) {
@@ -88,6 +94,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
      * Retrieve Radius.
      * <p>
      * Notes: currently unused in the client
+     *
      * @return The current Radius
      */
     public float getRadius() {
@@ -96,6 +103,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 
     /**
      * Set Radius.
+     *
      * @param value - new value.
      */
     public void setRadius(float value) {
@@ -106,6 +114,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
      * Retrieve Record count.
      * <p>
      * Notes: this is the count, not the size. The size is 3 times this value.
+     *
      * @return The current Record count
      */
     public List<BlockPosition> getRecors() {
@@ -114,6 +123,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 
     /**
      * Set Record count.
+     *
      * @param value - new value.
      */
     public void setRecords(List<BlockPosition> value) {

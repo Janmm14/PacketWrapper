@@ -24,26 +24,28 @@ import com.comphenix.protocol.wrappers.WrappedGameProfile;
 
 public class WrapperLoginClientStart extends AbstractPacket {
     public static final PacketType TYPE = PacketType.Login.Client.START;
-    
+
     public WrapperLoginClientStart() {
         super(new PacketContainer(TYPE), TYPE);
         handle.getModifier().writeDefaults();
     }
-    
+
     public WrapperLoginClientStart(PacketContainer packet) {
         super(packet, TYPE);
     }
-    
+
     /**
      * Retrieve Profile.
+     *
      * @return The current Profile
      */
     public WrappedGameProfile getProfile() {
         return handle.getGameProfiles().read(0);
     }
-    
+
     /**
      * Set Name.
+     *
      * @param value - new value.
      */
     public void setProfile(WrappedGameProfile value) {

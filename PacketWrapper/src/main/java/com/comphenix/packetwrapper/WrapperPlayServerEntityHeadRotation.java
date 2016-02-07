@@ -27,20 +27,21 @@ import com.comphenix.protocol.events.PacketEvent;
 
 public class WrapperPlayServerEntityHeadRotation extends AbstractPacket {
     public static final PacketType TYPE = PacketType.Play.Server.ENTITY_HEAD_ROTATION;
-    
+
     public WrapperPlayServerEntityHeadRotation() {
         super(new PacketContainer(TYPE), TYPE);
         handle.getModifier().writeDefaults();
     }
-    
+
     public WrapperPlayServerEntityHeadRotation(PacketContainer packet) {
         super(packet, TYPE);
     }
-    
+
     /**
      * Retrieve Entity ID.
      * <p>
      * Notes: entity's ID
+     *
      * @return The current Entity ID
      */
     public int getEntityID() {
@@ -49,6 +50,7 @@ public class WrapperPlayServerEntityHeadRotation extends AbstractPacket {
 
     /**
      * Set Entity ID.
+     *
      * @param value - new value.
      */
     public void setEntityID(int value) {
@@ -57,6 +59,7 @@ public class WrapperPlayServerEntityHeadRotation extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param world - the current world of the entity.
      * @return The spawned entity.
      */
@@ -66,25 +69,28 @@ public class WrapperPlayServerEntityHeadRotation extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param event - the packet event.
      * @return The spawned entity.
      */
     public Entity getEntity(PacketEvent event) {
         return getEntity(event.getPlayer().getWorld());
     }
-    
+
     /**
      * Retrieve Head Yaw.
      * <p>
      * Notes: head yaw in steps of 2p/256
+     *
      * @return The current Head Yaw
      */
     public byte getHeadYaw() {
         return handle.getBytes().read(0);
     }
-    
+
     /**
      * Set Head Yaw.
+     *
      * @param value - new value.
      */
     public void setHeadYaw(byte value) {

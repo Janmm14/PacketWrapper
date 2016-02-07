@@ -37,6 +37,7 @@ public class WrapperPlayClientPosition extends AbstractPacket {
      * Retrieve X.
      * <p>
      * Notes: absolute position
+     *
      * @return The current X
      */
     public double getX() {
@@ -45,6 +46,7 @@ public class WrapperPlayClientPosition extends AbstractPacket {
 
     /**
      * Set X.
+     *
      * @param value - new value.
      */
     public void setX(double value) {
@@ -55,6 +57,7 @@ public class WrapperPlayClientPosition extends AbstractPacket {
      * Retrieve FeetY.
      * <p>
      * Notes: absolute feet position, normally HeadY - 1.62. Used to modify the players bounding box when going up stairs, crouching, etc…
+     *
      * @return The current FeetY
      */
     public double getY() {
@@ -63,6 +66,7 @@ public class WrapperPlayClientPosition extends AbstractPacket {
 
     /**
      * Set FeetY.
+     *
      * @param value - new value.
      */
     public void setY(double value) {
@@ -73,6 +77,7 @@ public class WrapperPlayClientPosition extends AbstractPacket {
      * Retrieve Z.
      * <p>
      * Notes: absolute position
+     *
      * @return The current Z
      */
     public double getZ() {
@@ -81,6 +86,7 @@ public class WrapperPlayClientPosition extends AbstractPacket {
 
     /**
      * Set Z.
+     *
      * @param value - new value.
      */
     public void setZ(double value) {
@@ -91,6 +97,7 @@ public class WrapperPlayClientPosition extends AbstractPacket {
      * Retrieve On Ground.
      * <p>
      * Notes: true if the client is on the ground, False otherwise
+     *
      * @return The current On Ground
      */
     public boolean getOnGround() {
@@ -99,6 +106,7 @@ public class WrapperPlayClientPosition extends AbstractPacket {
 
     /**
      * Set On Ground.
+     *
      * @param value - new value.
      */
     public void setOnGround(boolean value) {

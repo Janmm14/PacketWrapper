@@ -41,6 +41,7 @@ public class WrapperPlayServerSpawnEntityWeather extends AbstractPacket {
      * Retrieve Entity ID.
      * <p>
      * Notes: entity's ID
+     *
      * @return The current Entity ID
      */
     public int getEntityID() {
@@ -49,6 +50,7 @@ public class WrapperPlayServerSpawnEntityWeather extends AbstractPacket {
 
     /**
      * Set Entity ID.
+     *
      * @param value - new value.
      */
     public void setEntityID(int value) {
@@ -57,6 +59,7 @@ public class WrapperPlayServerSpawnEntityWeather extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param world - the current world of the entity.
      * @return The spawned entity.
      */
@@ -66,6 +69,7 @@ public class WrapperPlayServerSpawnEntityWeather extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param event - the packet event.
      * @return The spawned entity.
      */
@@ -77,6 +81,7 @@ public class WrapperPlayServerSpawnEntityWeather extends AbstractPacket {
      * Retrieve Type.
      * <p>
      * Notes: the global entity type, currently always 1 for thunderbolt.
+     *
      * @return The current Type
      */
     public int getType() {
@@ -85,6 +90,7 @@ public class WrapperPlayServerSpawnEntityWeather extends AbstractPacket {
 
     /**
      * Set Type.
+     *
      * @param value - new value.
      */
     public void setType(int value) {
@@ -95,6 +101,7 @@ public class WrapperPlayServerSpawnEntityWeather extends AbstractPacket {
      * Retrieve X.
      * <p>
      * Notes: thunderbolt X a fixed-point number
+     *
      * @return The current X
      */
     public int getX() {
@@ -103,6 +110,7 @@ public class WrapperPlayServerSpawnEntityWeather extends AbstractPacket {
 
     /**
      * Set X.
+     *
      * @param value - new value.
      */
     public void setX(int value) {
@@ -113,6 +121,7 @@ public class WrapperPlayServerSpawnEntityWeather extends AbstractPacket {
      * Retrieve Y.
      * <p>
      * Notes: thunderbolt Y a fixed-point number
+     *
      * @return The current Y
      */
     public int getY() {
@@ -121,6 +130,7 @@ public class WrapperPlayServerSpawnEntityWeather extends AbstractPacket {
 
     /**
      * Set Y.
+     *
      * @param value - new value.
      */
     public void setY(int value) {
@@ -131,6 +141,7 @@ public class WrapperPlayServerSpawnEntityWeather extends AbstractPacket {
      * Retrieve Z.
      * <p>
      * Notes: thunderbolt Z a fixed-point number
+     *
      * @return The current Z
      */
     public int getZ() {
@@ -139,6 +150,7 @@ public class WrapperPlayServerSpawnEntityWeather extends AbstractPacket {
 
     /**
      * Set Z.
+     *
      * @param value - new value.
      */
     public void setZ(int value) {

@@ -41,6 +41,7 @@ public class WrapperPlayServerSpawnEntityExperienceOrb extends AbstractPacket {
      * Retrieve Entity ID.
      * <p>
      * Notes: entity's ID
+     *
      * @return The current Entity ID
      */
     public int getEntityID() {
@@ -49,6 +50,7 @@ public class WrapperPlayServerSpawnEntityExperienceOrb extends AbstractPacket {
 
     /**
      * Set Entity ID.
+     *
      * @param value - new value.
      */
     public void setEntityID(int value) {
@@ -57,6 +59,7 @@ public class WrapperPlayServerSpawnEntityExperienceOrb extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param world - the current world of the entity.
      * @return The spawned entity.
      */
@@ -66,6 +69,7 @@ public class WrapperPlayServerSpawnEntityExperienceOrb extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param event - the packet event.
      * @return The spawned entity.
      */
@@ -77,6 +81,7 @@ public class WrapperPlayServerSpawnEntityExperienceOrb extends AbstractPacket {
      * Retrieve X.
      * <p>
      * Notes: x position as a Fixed-Point number
+     *
      * @return The current X
      */
     public int getX() {
@@ -85,6 +90,7 @@ public class WrapperPlayServerSpawnEntityExperienceOrb extends AbstractPacket {
 
     /**
      * Set X.
+     *
      * @param value - new value.
      */
     public void setX(int value) {
@@ -95,6 +101,7 @@ public class WrapperPlayServerSpawnEntityExperienceOrb extends AbstractPacket {
      * Retrieve Y.
      * <p>
      * Notes: y position as a Fixed-Point number
+     *
      * @return The current Y
      */
     public int getY() {
@@ -103,6 +110,7 @@ public class WrapperPlayServerSpawnEntityExperienceOrb extends AbstractPacket {
 
     /**
      * Set Y.
+     *
      * @param value - new value.
      */
     public void setY(int value) {
@@ -113,6 +121,7 @@ public class WrapperPlayServerSpawnEntityExperienceOrb extends AbstractPacket {
      * Retrieve Z.
      * <p>
      * Notes: z position as a Fixed-Point number
+     *
      * @return The current Z
      */
     public int getZ() {
@@ -121,6 +130,7 @@ public class WrapperPlayServerSpawnEntityExperienceOrb extends AbstractPacket {
 
     /**
      * Set Z.
+     *
      * @param value - new value.
      */
     public void setZ(int value) {
@@ -131,6 +141,7 @@ public class WrapperPlayServerSpawnEntityExperienceOrb extends AbstractPacket {
      * Retrieve Count.
      * <p>
      * Notes: the amount of experience this orb will reward once collected
+     *
      * @return The current Count
      */
     public int getCount() {
@@ -139,6 +150,7 @@ public class WrapperPlayServerSpawnEntityExperienceOrb extends AbstractPacket {
 
     /**
      * Set Count.
+     *
      * @param value - new value.
      */
     public void setCount(int value) {

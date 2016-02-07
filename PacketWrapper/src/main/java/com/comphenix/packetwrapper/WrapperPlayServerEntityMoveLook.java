@@ -41,6 +41,7 @@ public class WrapperPlayServerEntityMoveLook extends AbstractPacket {
      * Retrieve Entity ID.
      * <p>
      * Notes: entity's ID
+     *
      * @return The current Entity ID
      */
     public int getEntityID() {
@@ -49,6 +50,7 @@ public class WrapperPlayServerEntityMoveLook extends AbstractPacket {
 
     /**
      * Set Entity ID.
+     *
      * @param value - new value.
      */
     public void setEntityID(int value) {
@@ -57,6 +59,7 @@ public class WrapperPlayServerEntityMoveLook extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param world - the current world of the entity.
      * @return The spawned entity.
      */
@@ -66,6 +69,7 @@ public class WrapperPlayServerEntityMoveLook extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param event - the packet event.
      * @return The spawned entity.
      */
@@ -75,6 +79,7 @@ public class WrapperPlayServerEntityMoveLook extends AbstractPacket {
 
     /**
      * Retrieve DX.
+     *
      * @return The current DX
      */
     public double getDx() {
@@ -83,6 +88,7 @@ public class WrapperPlayServerEntityMoveLook extends AbstractPacket {
 
     /**
      * Set DX.
+     *
      * @param value - new value.
      */
     public void setDx(double value) {
@@ -91,6 +97,7 @@ public class WrapperPlayServerEntityMoveLook extends AbstractPacket {
 
     /**
      * Retrieve DY.
+     *
      * @return The current DY
      */
     public double getDy() {
@@ -99,6 +106,7 @@ public class WrapperPlayServerEntityMoveLook extends AbstractPacket {
 
     /**
      * Set DY.
+     *
      * @param value - new value.
      */
     public void setDy(double value) {
@@ -107,6 +115,7 @@ public class WrapperPlayServerEntityMoveLook extends AbstractPacket {
 
     /**
      * Retrieve DZ.
+     *
      * @return The current DZ
      */
     public double getDz() {
@@ -115,6 +124,7 @@ public class WrapperPlayServerEntityMoveLook extends AbstractPacket {
 
     /**
      * Set DZ.
+     *
      * @param value - new value.
      */
     public void setDz(double value) {
@@ -123,38 +133,43 @@ public class WrapperPlayServerEntityMoveLook extends AbstractPacket {
 
     /**
      * Retrieve the yaw of the current entity.
+     *
      * @return The current Yaw
-    */
+     */
     public float getYaw() {
         return (handle.getBytes().read(0) * 360.F) / 256.0F;
     }
 
     /**
      * Set the yaw of the current entity.
+     *
      * @param value - new yaw.
-    */
+     */
     public void setYaw(float value) {
         handle.getBytes().write(0, (byte) (value * 256.0F / 360.0F));
     }
 
     /**
      * Retrieve the pitch of the current entity.
+     *
      * @return The current pitch
-    */
+     */
     public float getPitch() {
         return (handle.getBytes().read(1) * 360.F) / 256.0F;
     }
 
     /**
      * Set the pitch of the current entity.
+     *
      * @param value - new pitch.
-    */
+     */
     public void setPitch(float value) {
         handle.getBytes().write(1, (byte) (value * 256.0F / 360.0F));
     }
 
     /**
      * Retrieve On Ground.
+     *
      * @return The current On Ground
      */
     public boolean getOnGround() {
@@ -163,6 +178,7 @@ public class WrapperPlayServerEntityMoveLook extends AbstractPacket {
 
     /**
      * Set On Ground.
+     *
      * @param value - new value.
      */
     public void setOnGround(boolean value) {

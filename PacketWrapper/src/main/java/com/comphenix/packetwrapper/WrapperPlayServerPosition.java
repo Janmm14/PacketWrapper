@@ -43,6 +43,7 @@ public class WrapperPlayServerPosition extends AbstractPacket {
      * Retrieve X.
      * <p>
      * Notes: absolute/Relative position
+     *
      * @return The current X
      */
     public double getX() {
@@ -51,6 +52,7 @@ public class WrapperPlayServerPosition extends AbstractPacket {
 
     /**
      * Set X.
+     *
      * @param value - new value.
      */
     public void setX(double value) {
@@ -61,6 +63,7 @@ public class WrapperPlayServerPosition extends AbstractPacket {
      * Retrieve Y.
      * <p>
      * Notes: absolute/Relative position
+     *
      * @return The current Y
      */
     public double getY() {
@@ -69,6 +72,7 @@ public class WrapperPlayServerPosition extends AbstractPacket {
 
     /**
      * Set Y.
+     *
      * @param value - new value.
      */
     public void setY(double value) {
@@ -79,6 +83,7 @@ public class WrapperPlayServerPosition extends AbstractPacket {
      * Retrieve Z.
      * <p>
      * Notes: absolute/Relative position
+     *
      * @return The current Z
      */
     public double getZ() {
@@ -87,6 +92,7 @@ public class WrapperPlayServerPosition extends AbstractPacket {
 
     /**
      * Set Z.
+     *
      * @param value - new value.
      */
     public void setZ(double value) {
@@ -97,6 +103,7 @@ public class WrapperPlayServerPosition extends AbstractPacket {
      * Retrieve Yaw.
      * <p>
      * Notes: absolute/Relative rotation on the X Axis, in degrees
+     *
      * @return The current Yaw
      */
     public float getYaw() {
@@ -105,6 +112,7 @@ public class WrapperPlayServerPosition extends AbstractPacket {
 
     /**
      * Set Yaw.
+     *
      * @param value - new value.
      */
     public void setYaw(float value) {
@@ -115,6 +123,7 @@ public class WrapperPlayServerPosition extends AbstractPacket {
      * Retrieve Pitch.
      * <p>
      * Notes: absolute/Relative rotation on the Y Axis, in degrees
+     *
      * @return The current Pitch
      */
     public float getPitch() {
@@ -123,6 +132,7 @@ public class WrapperPlayServerPosition extends AbstractPacket {
 
     /**
      * Set Pitch.
+     *
      * @param value - new value.
      */
     public void setPitch(float value) {

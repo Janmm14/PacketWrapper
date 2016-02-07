@@ -27,20 +27,21 @@ import com.comphenix.protocol.events.PacketEvent;
 
 public class WrapperPlayServerEntity extends AbstractPacket {
     public static final PacketType TYPE = PacketType.Play.Server.ENTITY;
-    
+
     public WrapperPlayServerEntity() {
         super(new PacketContainer(TYPE), TYPE);
         handle.getModifier().writeDefaults();
     }
-    
+
     public WrapperPlayServerEntity(PacketContainer packet) {
         super(packet, TYPE);
     }
-    
+
     /**
      * Retrieve Entity ID.
      * <p>
      * Notes: entity's ID
+     *
      * @return The current Entity ID
      */
     public int getEntityID() {
@@ -49,6 +50,7 @@ public class WrapperPlayServerEntity extends AbstractPacket {
 
     /**
      * Set Entity ID.
+     *
      * @param value - new value.
      */
     public void setEntityID(int value) {
@@ -57,6 +59,7 @@ public class WrapperPlayServerEntity extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param world - the current world of the entity.
      * @return The spawned entity.
      */
@@ -66,6 +69,7 @@ public class WrapperPlayServerEntity extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param event - the packet event.
      * @return The spawned entity.
      */

@@ -27,20 +27,21 @@ import com.comphenix.protocol.events.PacketEvent;
 
 public class WrapperPlayServerAttachEntity extends AbstractPacket {
     public static final PacketType TYPE = PacketType.Play.Server.ATTACH_ENTITY;
-    
+
     public WrapperPlayServerAttachEntity() {
         super(new PacketContainer(TYPE), TYPE);
         handle.getModifier().writeDefaults();
     }
-    
+
     public WrapperPlayServerAttachEntity(PacketContainer packet) {
         super(packet, TYPE);
     }
-    
+
     /**
      * Retrieve Entity ID.
      * <p>
      * Notes: entity's ID
+     *
      * @return The current Entity ID
      */
     public int getEntityID() {
@@ -49,6 +50,7 @@ public class WrapperPlayServerAttachEntity extends AbstractPacket {
 
     /**
      * Set Entity ID.
+     *
      * @param value - new value.
      */
     public void setEntityID(int value) {
@@ -57,6 +59,7 @@ public class WrapperPlayServerAttachEntity extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param world - the current world of the entity.
      * @return The spawned entity.
      */
@@ -66,41 +69,46 @@ public class WrapperPlayServerAttachEntity extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param event - the packet event.
      * @return The spawned entity.
      */
     public Entity getEntity(PacketEvent event) {
         return getEntity(event.getPlayer().getWorld());
     }
-    
+
     /**
      * Retrieve Vehicle ID.
      * <p>
      * Notes: vechicle's Entity ID
+     *
      * @return The current Vehicle ID
      */
     public int getVehicleId() {
         return handle.getIntegers().read(2);
     }
-    
+
     /**
      * Set Vehicle ID.
+     *
      * @param value - new value.
      */
     public void setVehicleId(int value) {
         handle.getIntegers().write(2, value);
     }
-    
+
     /**
      * Retrieve Leash.
+     *
      * @return The current Leash
      */
     public boolean getLeash() {
         return handle.getIntegers().read(0) != 0;
     }
-    
+
     /**
      * Set Leash.
+     *
      * @param value - new value.
      */
     public void setLeash(boolean value) {

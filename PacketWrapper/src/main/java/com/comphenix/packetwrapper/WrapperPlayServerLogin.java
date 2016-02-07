@@ -44,6 +44,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
      * Retrieve Entity ID.
      * <p>
      * Notes: entity's ID
+     *
      * @return The current Entity ID
      */
     public int getEntityID() {
@@ -52,6 +53,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
 
     /**
      * Set Entity ID.
+     *
      * @param value - new value.
      */
     public void setEntityID(int value) {
@@ -60,6 +62,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param world - the current world of the entity.
      * @return The spawned entity.
      */
@@ -69,6 +72,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param event - the packet event.
      * @return The spawned entity.
      */
@@ -80,6 +84,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
      * Retrieve Gamemode.
      * <p>
      * Notes: 0: survival, 1: creative, 2: adventure. Bit 3 (0x8) is the hardcore flag
+     *
      * @return The current Gamemode
      */
     public NativeGameMode getGamemode() {
@@ -88,6 +93,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
 
     /**
      * Set Gamemode.
+     *
      * @param value - new value.
      */
     public void setGamemode(NativeGameMode value) {
@@ -98,6 +104,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
      * Retrieve Dimension.
      * <p>
      * Notes: -1: nether, 0: overworld, 1: end
+     *
      * @return The current Dimension
      */
     public int getDimension() {
@@ -106,6 +113,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
 
     /**
      * Set Dimension.
+     *
      * @param value - new value.
      */
     public void setDimension(int value) {
@@ -116,6 +124,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
      * Retrieve Difficulty.
      * <p>
      * Notes: 0 thru 3 for Peaceful, Easy, Normal, Hard
+     *
      * @return The current Difficulty
      */
     public Difficulty getDifficulty() {
@@ -124,6 +133,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
 
     /**
      * Set Difficulty.
+     *
      * @param value - new value.
      */
     public void setDifficulty(Difficulty value) {
@@ -134,6 +144,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
      * Retrieve Max Players.
      * <p>
      * Notes: used by the client to draw the player list
+     *
      * @return The current Max Players
      */
     public int getMaxPlayers() {
@@ -142,6 +153,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
 
     /**
      * Set Max Players.
+     *
      * @param value - new value.
      */
     public void setMaxPlayers(int value) {
@@ -152,6 +164,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
      * Retrieve Level Type.
      * <p>
      * Notes: default, flat, largeBiomes, amplified, default_1_1
+     *
      * @return The current Level Type
      */
     public WorldType getLevelType() {
@@ -160,6 +173,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
 
     /**
      * Set Level Type.
+     *
      * @param value - new value.
      */
     public void setLevelType(WorldType value) {
@@ -168,6 +182,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
 
     /**
      * Retrieve Reduced Debug Info.
+     *
      * @return The current Reduced Debug Info
      */
     public boolean getReducedDebugInfo() {
@@ -176,6 +191,7 @@ public class WrapperPlayServerLogin extends AbstractPacket {
 
     /**
      * Set Reduced Debug Info.
+     *
      * @param value - new value.
      */
     public void setReducedDebugInfo(boolean value) {

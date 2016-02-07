@@ -36,6 +36,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
 
     /**
      * Retrieve Particle type.
+     *
      * @return The current Particle type
      */
     public Particle getParticleType() {
@@ -44,6 +45,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
 
     /**
      * Set Particle type.
+     *
      * @param value - new value.
      */
     public void setParticleType(Particle value) {
@@ -54,6 +56,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
      * Retrieve X.
      * <p>
      * Notes: x position of the particle
+     *
      * @return The current X
      */
     public float getX() {
@@ -62,6 +65,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
 
     /**
      * Set X.
+     *
      * @param value - new value.
      */
     public void setX(float value) {
@@ -72,6 +76,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
      * Retrieve Y.
      * <p>
      * Notes: y position of the particle
+     *
      * @return The current Y
      */
     public float getY() {
@@ -80,6 +85,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
 
     /**
      * Set Y.
+     *
      * @param value - new value.
      */
     public void setY(float value) {
@@ -90,6 +96,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
      * Retrieve Z.
      * <p>
      * Notes: z position of the particle
+     *
      * @return The current Z
      */
     public float getZ() {
@@ -98,6 +105,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
 
     /**
      * Set Z.
+     *
      * @param value - new value.
      */
     public void setZ(float value) {
@@ -108,6 +116,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
      * Retrieve Offset X.
      * <p>
      * Notes: this is added to the X position after being multiplied by random.nextGaussian()
+     *
      * @return The current Offset X
      */
     public float getOffsetX() {
@@ -116,6 +125,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
 
     /**
      * Set Offset X.
+     *
      * @param value - new value.
      */
     public void setOffsetX(float value) {
@@ -126,6 +136,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
      * Retrieve Offset Y.
      * <p>
      * Notes: this is added to the Y position after being multiplied by random.nextGaussian()
+     *
      * @return The current Offset Y
      */
     public float getOffsetY() {
@@ -134,6 +145,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
 
     /**
      * Set Offset Y.
+     *
      * @param value - new value.
      */
     public void setOffsetY(float value) {
@@ -144,6 +156,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
      * Retrieve Offset Z.
      * <p>
      * Notes: this is added to the Z position after being multiplied by random.nextGaussian()
+     *
      * @return The current Offset Z
      */
     public float getOffsetZ() {
@@ -152,6 +165,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
 
     /**
      * Set Offset Z.
+     *
      * @param value - new value.
      */
     public void setOffsetZ(float value) {
@@ -162,6 +176,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
      * Retrieve Particle data.
      * <p>
      * Notes: the data of each particle
+     *
      * @return The current Particle data
      */
     public float getParticleData() {
@@ -170,6 +185,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
 
     /**
      * Set Particle data.
+     *
      * @param value - new value.
      */
     public void setParticleData(float value) {
@@ -180,6 +196,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
      * Retrieve Number of particles.
      * <p>
      * Notes: the number of particles to create
+     *
      * @return The current Number of particles
      */
     public int getNumberOfParticles() {
@@ -188,6 +205,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
 
     /**
      * Set Number of particles.
+     *
      * @param value - new value.
      */
     public void setNumberOfParticles(int value) {
@@ -198,6 +216,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
      * Retrieve Long Distance.
      * <p>
      * Notes: if true, particle distance increases from 256 to 65536.
+     *
      * @return The current Long Distance
      */
     public boolean getLongDistance() {
@@ -206,6 +225,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
 
     /**
      * Set Long Distance.
+     *
      * @param value - new value.
      */
     public void setLongDistance(boolean value) {
@@ -216,6 +236,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
      * Retrieve Data.
      * <p>
      * Notes: length depends on particle. IRON_CRACK has a length of 2, BLOCK_CRACK and BLOCK_DUST have lengths of 1, the rest have 0.
+     *
      * @return The current Data
      * @see Particle#getDataLength()
      */
@@ -225,6 +246,7 @@ public class WrapperPlayServerWorldParticles extends AbstractPacket {
 
     /**
      * Set Data.
+     *
      * @param value - new value.
      */
     public void setData(int[] value) {

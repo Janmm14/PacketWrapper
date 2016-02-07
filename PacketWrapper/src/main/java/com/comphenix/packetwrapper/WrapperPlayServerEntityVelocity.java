@@ -41,6 +41,7 @@ public class WrapperPlayServerEntityVelocity extends AbstractPacket {
      * Retrieve Entity ID.
      * <p>
      * Notes: entity's ID
+     *
      * @return The current Entity ID
      */
     public int getEntityID() {
@@ -49,6 +50,7 @@ public class WrapperPlayServerEntityVelocity extends AbstractPacket {
 
     /**
      * Set Entity ID.
+     *
      * @param value - new value.
      */
     public void setEntityID(int value) {
@@ -57,6 +59,7 @@ public class WrapperPlayServerEntityVelocity extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param world - the current world of the entity.
      * @return The spawned entity.
      */
@@ -66,6 +69,7 @@ public class WrapperPlayServerEntityVelocity extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param event - the packet event.
      * @return The spawned entity.
      */
@@ -75,48 +79,54 @@ public class WrapperPlayServerEntityVelocity extends AbstractPacket {
 
     /**
      * Retrieve the velocity in the x axis.
+     *
      * @return The current velocity X
-    */
+     */
     public double getVelocityX() {
         return handle.getIntegers().read(1) / 8000.0D;
     }
 
     /**
      * Set the velocity in the x axis.
+     *
      * @param value - new value.
-    */
+     */
     public void setVelocityX(double value) {
         handle.getIntegers().write(1, (int) (value * 8000.0D));
     }
 
     /**
      * Retrieve the velocity in the y axis.
+     *
      * @return The current velocity y
-    */
+     */
     public double getVelocityY() {
         return handle.getIntegers().read(2) / 8000.0D;
     }
 
     /**
      * Set the velocity in the y axis.
+     *
      * @param value - new value.
-    */
+     */
     public void setVelocityY(double value) {
         handle.getIntegers().write(2, (int) (value * 8000.0D));
     }
 
     /**
      * Retrieve the velocity in the z axis.
+     *
      * @return The current velocity z
-    */
+     */
     public double getVelocityZ() {
         return handle.getIntegers().read(3) / 8000.0D;
     }
 
     /**
      * Set the velocity in the z axis.
+     *
      * @param value - new value.
-    */
+     */
     public void setVelocityZ(double value) {
         handle.getIntegers().write(3, (int) (value * 8000.0D));
     }

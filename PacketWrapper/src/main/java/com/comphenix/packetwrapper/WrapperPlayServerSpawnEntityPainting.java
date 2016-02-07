@@ -45,6 +45,7 @@ public class WrapperPlayServerSpawnEntityPainting extends AbstractPacket {
      * Retrieve Entity ID.
      * <p>
      * Notes: entity's ID
+     *
      * @return The current Entity ID
      */
     public int getEntityID() {
@@ -53,6 +54,7 @@ public class WrapperPlayServerSpawnEntityPainting extends AbstractPacket {
 
     /**
      * Set Entity ID.
+     *
      * @param value - new value.
      */
     public void setEntityID(int value) {
@@ -61,6 +63,7 @@ public class WrapperPlayServerSpawnEntityPainting extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param world - the current world of the entity.
      * @return The spawned entity.
      */
@@ -70,6 +73,7 @@ public class WrapperPlayServerSpawnEntityPainting extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param event - the packet event.
      * @return The spawned entity.
      */
@@ -81,6 +85,7 @@ public class WrapperPlayServerSpawnEntityPainting extends AbstractPacket {
      * Retrieve Title.
      * <p>
      * Notes: name of the painting. Max length 13
+     *
      * @return The current Title
      */
     public String getTitle() {
@@ -89,6 +94,7 @@ public class WrapperPlayServerSpawnEntityPainting extends AbstractPacket {
 
     /**
      * Set Title.
+     *
      * @param value - new value.
      */
     public void setTitle(String value) {
@@ -99,6 +105,7 @@ public class WrapperPlayServerSpawnEntityPainting extends AbstractPacket {
      * Retrieve Location.
      * <p>
      * Notes: center coordinates
+     *
      * @return The current Location
      */
     public BlockPosition getLocation() {
@@ -107,6 +114,7 @@ public class WrapperPlayServerSpawnEntityPainting extends AbstractPacket {
 
     /**
      * Set Location.
+     *
      * @param value - new value.
      */
     public void setLocation(BlockPosition value) {
@@ -125,7 +133,7 @@ public class WrapperPlayServerSpawnEntityPainting extends AbstractPacket {
     }
 
     private StructureModifier<Direction> getDirections() {
-        return handle.getModifier().<Direction> withType(DIRECTION_CLASS, EnumWrappers.getGenericConverter(Direction.class));
+        return handle.getModifier().<Direction>withType(DIRECTION_CLASS, EnumWrappers.getGenericConverter(Direction.class));
     }
 
     public Direction getDirection() {

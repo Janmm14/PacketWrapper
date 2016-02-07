@@ -44,6 +44,7 @@ public class WrapperPlayServerUpdateAttributes extends AbstractPacket {
      * Retrieve Entity ID.
      * <p>
      * Notes: entity's ID
+     *
      * @return The current Entity ID
      */
     public int getEntityID() {
@@ -52,6 +53,7 @@ public class WrapperPlayServerUpdateAttributes extends AbstractPacket {
 
     /**
      * Set Entity ID.
+     *
      * @param value - new value.
      */
     public void setEntityID(int value) {
@@ -60,6 +62,7 @@ public class WrapperPlayServerUpdateAttributes extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param world - the current world of the entity.
      * @return The spawned entity.
      */
@@ -69,6 +72,7 @@ public class WrapperPlayServerUpdateAttributes extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param event - the packet event.
      * @return The spawned entity.
      */
@@ -78,16 +82,18 @@ public class WrapperPlayServerUpdateAttributes extends AbstractPacket {
 
     /**
      * Retrieve the collection of attributes associated with the entity.
+     *
      * @return The current attributes.
-    */
+     */
     public List<WrappedAttribute> getAttributes() {
         return handle.getAttributeCollectionModifier().read(0);
     }
 
     /**
      * Set the new or updated attributes associated with the entity.
+     *
      * @param value - new/updated attributes.
-    */
+     */
     public void setAttributes(List<WrappedAttribute> value) {
         handle.getAttributeCollectionModifier().write(0, value);
     }

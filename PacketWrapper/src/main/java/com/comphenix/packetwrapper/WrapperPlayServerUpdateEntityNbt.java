@@ -42,6 +42,7 @@ public class WrapperPlayServerUpdateEntityNbt extends AbstractPacket {
      * Retrieve Entity ID.
      * <p>
      * Notes: entity's ID
+     *
      * @return The current Entity ID
      */
     public int getEntityID() {
@@ -50,6 +51,7 @@ public class WrapperPlayServerUpdateEntityNbt extends AbstractPacket {
 
     /**
      * Set Entity ID.
+     *
      * @param value - new value.
      */
     public void setEntityID(int value) {
@@ -58,6 +60,7 @@ public class WrapperPlayServerUpdateEntityNbt extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param world - the current world of the entity.
      * @return The spawned entity.
      */
@@ -67,6 +70,7 @@ public class WrapperPlayServerUpdateEntityNbt extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param event - the packet event.
      * @return The spawned entity.
      */
@@ -76,6 +80,7 @@ public class WrapperPlayServerUpdateEntityNbt extends AbstractPacket {
 
     /**
      * Retrieve Tag.
+     *
      * @return The current Tag
      */
     public NbtBase<?> getTag() {
@@ -84,6 +89,7 @@ public class WrapperPlayServerUpdateEntityNbt extends AbstractPacket {
 
     /**
      * Set Tag.
+     *
      * @param value - new value.
      */
     public void setTag(NbtBase<?> value) {

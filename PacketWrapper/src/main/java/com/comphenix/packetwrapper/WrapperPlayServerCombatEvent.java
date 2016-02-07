@@ -40,7 +40,7 @@ public class WrapperPlayServerCombatEvent extends AbstractPacket {
      * Retrieve Event.
      * <p>
      * Notes: 0 ENTER_COMBAT, 1 END_COMBAT, 2 ENTITY_DEAD
-     * 
+     *
      * @return The current Event
      */
     public CombatEventType getEvent() {
@@ -49,7 +49,7 @@ public class WrapperPlayServerCombatEvent extends AbstractPacket {
 
     /**
      * Set Event.
-     * 
+     *
      * @param value - new value.
      */
     public void setEvent(CombatEventType value) {

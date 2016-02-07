@@ -25,28 +25,30 @@ import com.comphenix.protocol.events.PacketContainer;
 
 public class WrapperLoginServerEncryptionBegin extends AbstractPacket {
     public static final PacketType TYPE = PacketType.Login.Server.ENCRYPTION_BEGIN;
-    
+
     public WrapperLoginServerEncryptionBegin() {
         super(new PacketContainer(TYPE), TYPE);
         handle.getModifier().writeDefaults();
     }
-    
+
     public WrapperLoginServerEncryptionBegin(PacketContainer packet) {
         super(packet, TYPE);
     }
-    
+
     /**
      * Retrieve Server ID.
      * <p>
      * Notes: appears to be empty as of 1.7.x
+     *
      * @return The current Server ID
      */
     public String getServerId() {
         return handle.getStrings().read(0);
     }
-    
+
     /**
      * Set Server ID.
+     *
      * @param value - new value.
      */
     public void setServerId(String value) {
@@ -55,14 +57,16 @@ public class WrapperLoginServerEncryptionBegin extends AbstractPacket {
 
     /**
      * Retrieve Public Key.
+     *
      * @return The current Public Key
      */
     public PublicKey getPublicKey() {
         return handle.getSpecificModifier(PublicKey.class).read(0);
     }
-    
+
     /**
      * Set Public Key.
+     *
      * @param value - new value.
      */
     public void setPublicKey(PublicKey value) {
@@ -71,6 +75,7 @@ public class WrapperLoginServerEncryptionBegin extends AbstractPacket {
 
     /**
      * Retrieve Verify Token.
+     *
      * @return The current Verify Token
      */
     public byte[] getVerifyToken() {
@@ -79,6 +84,7 @@ public class WrapperLoginServerEncryptionBegin extends AbstractPacket {
 
     /**
      * Set Verify Token.
+     *
      * @param value - new value.
      */
     public void setVerifyToken(byte[] value) {

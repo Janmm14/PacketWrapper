@@ -23,26 +23,28 @@ import com.comphenix.protocol.events.PacketContainer;
 
 public class WrapperLoginClientEncryptionBegin extends AbstractPacket {
     public static final PacketType TYPE = PacketType.Login.Client.ENCRYPTION_BEGIN;
-    
+
     public WrapperLoginClientEncryptionBegin() {
         super(new PacketContainer(TYPE), TYPE);
         handle.getModifier().writeDefaults();
     }
-    
+
     public WrapperLoginClientEncryptionBegin(PacketContainer packet) {
         super(packet, TYPE);
     }
-    
+
     /**
      * Retrieve Shared Secret.
+     *
      * @return The current Shared Secret
      */
     public byte[] getSharedSecret() {
         return handle.getByteArrays().read(0);
     }
-    
+
     /**
      * Set Shared Secret.
+     *
      * @param value - new value.
      */
     public void setSharedSecret(byte[] value) {
@@ -51,14 +53,16 @@ public class WrapperLoginClientEncryptionBegin extends AbstractPacket {
 
     /**
      * Retrieve Verify Token.
+     *
      * @return The current Verify Token
      */
     public byte[] getVerifyToken() {
         return handle.getByteArrays().read(1);
     }
-    
+
     /**
      * Set Verify Token.
+     *
      * @param value - new value.
      */
     public void setVerifyToken(byte[] value) {

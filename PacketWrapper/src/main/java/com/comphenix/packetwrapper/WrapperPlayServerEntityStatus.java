@@ -41,6 +41,7 @@ public class WrapperPlayServerEntityStatus extends AbstractPacket {
      * Retrieve Entity ID.
      * <p>
      * Notes: entity's ID
+     *
      * @return The current Entity ID
      */
     public int getEntityID() {
@@ -49,6 +50,7 @@ public class WrapperPlayServerEntityStatus extends AbstractPacket {
 
     /**
      * Set Entity ID.
+     *
      * @param value - new value.
      */
     public void setEntityID(int value) {
@@ -57,6 +59,7 @@ public class WrapperPlayServerEntityStatus extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param world - the current world of the entity.
      * @return The spawned entity.
      */
@@ -66,6 +69,7 @@ public class WrapperPlayServerEntityStatus extends AbstractPacket {
 
     /**
      * Retrieve the entity of the painting that will be spawned.
+     *
      * @param event - the packet event.
      * @return The spawned entity.
      */
@@ -77,6 +81,7 @@ public class WrapperPlayServerEntityStatus extends AbstractPacket {
      * Retrieve Entity Status.
      * <p>
      * Notes: see below
+     *
      * @return The current Entity Status
      */
     public byte getEntityStatus() {
@@ -85,6 +90,7 @@ public class WrapperPlayServerEntityStatus extends AbstractPacket {
 
     /**
      * Set Entity Status.
+     *
      * @param value - new value.
      */
     public void setEntityStatus(byte value) {

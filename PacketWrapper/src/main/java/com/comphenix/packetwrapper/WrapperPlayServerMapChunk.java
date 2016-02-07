@@ -37,6 +37,7 @@ public class WrapperPlayServerMapChunk extends AbstractPacket {
      * Retrieve Chunk X.
      * <p>
      * Notes: chunk X coordinate
+     *
      * @return The current Chunk X
      */
     public int getChunkX() {
@@ -45,6 +46,7 @@ public class WrapperPlayServerMapChunk extends AbstractPacket {
 
     /**
      * Set Chunk X.
+     *
      * @param value - new value.
      */
     public void setChunkX(int value) {
@@ -55,6 +57,7 @@ public class WrapperPlayServerMapChunk extends AbstractPacket {
      * Retrieve Chunk Z.
      * <p>
      * Notes: chunk Z coordinate
+     *
      * @return The current Chunk Z
      */
     public int getChunkZ() {
@@ -63,6 +66,7 @@ public class WrapperPlayServerMapChunk extends AbstractPacket {
 
     /**
      * Set Chunk Z.
+     *
      * @param value - new value.
      */
     public void setChunkZ(int value) {
@@ -81,6 +85,7 @@ public class WrapperPlayServerMapChunk extends AbstractPacket {
      * Retrieve Ground-Up continuous.
      * <p>
      * Notes: this is True if the packet represents all sections in this vertical column, where the primary bit map specifies exactly which sections are included, and which are air
+     *
      * @return The current Ground-Up continuous
      */
     public boolean getGroundUpContinuous() {
@@ -89,6 +94,7 @@ public class WrapperPlayServerMapChunk extends AbstractPacket {
 
     /**
      * Set Ground-Up continuous.
+     *
      * @param value - new value.
      */
     public void setGroundUpContinuous(boolean value) {

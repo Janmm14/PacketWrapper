@@ -24,18 +24,19 @@ import com.comphenix.protocol.wrappers.WrappedChatComponent;
 
 public class WrapperLoginServerDisconnect extends AbstractPacket {
     public static final PacketType TYPE = PacketType.Login.Server.DISCONNECT;
-    
+
     public WrapperLoginServerDisconnect() {
         super(new PacketContainer(TYPE), TYPE);
         handle.getModifier().writeDefaults();
     }
-    
+
     public WrapperLoginServerDisconnect(PacketContainer packet) {
         super(packet, TYPE);
     }
-    
+
     /**
      * Retrieve reason.
+     *
      * @return The current reason
      */
     public WrappedChatComponent getReason() {
@@ -46,9 +47,10 @@ public class WrapperLoginServerDisconnect extends AbstractPacket {
     public WrappedChatComponent getJsonData() {
         return getReason();
     }
-    
+
     /**
      * Set reason.
+     *
      * @param value - new value.
      */
     public void setReason(WrappedChatComponent value) {

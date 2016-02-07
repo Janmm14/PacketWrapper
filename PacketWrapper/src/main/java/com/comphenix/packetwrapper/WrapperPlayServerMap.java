@@ -37,6 +37,7 @@ public class WrapperPlayServerMap extends AbstractPacket {
      * Retrieve Item Damage.
      * <p>
      * Notes: the damage value of the map being modified
+     *
      * @return The current Item Damage
      */
     public int getItemDamage() {
@@ -45,6 +46,7 @@ public class WrapperPlayServerMap extends AbstractPacket {
 
     /**
      * Set Item Damage.
+     *
      * @param value - new value.
      */
     public void setItemDamage(int value) {
@@ -53,6 +55,7 @@ public class WrapperPlayServerMap extends AbstractPacket {
 
     /**
      * Retrieve Scale.
+     *
      * @return The current Scale
      */
     public byte getScale() {
@@ -61,6 +64,7 @@ public class WrapperPlayServerMap extends AbstractPacket {
 
     /**
      * Set Scale.
+     *
      * @param value - new value.
      */
     public void setScale(byte value) {
