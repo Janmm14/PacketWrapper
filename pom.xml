@@ -5,7 +5,7 @@
   <groupId>com.comphenix.packetwrapper</groupId>
   <artifactId>PacketWrapper</artifactId>
   <packaging>jar</packaging>
-  <version>1.8.7-R0.1-SNAPSHOT</version>
+  <version>1.8-SNAPSHOT</version>
   <name>PacketWrapper</name>
 
   <inceptionYear>2012</inceptionYear>
