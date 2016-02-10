@@ -118,6 +118,14 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
      *
      * @return The current Record count
      */
+    public List<BlockPosition> getRecords() {
+        return handle.getBlockPositionCollectionModifier().read(0);
+    }
+
+    /**
+     * @deprecated misspelled, use {@link #getRecords()}
+     */
+    @Deprecated
     public List<BlockPosition> getRecors() {
         return handle.getBlockPositionCollectionModifier().read(0);
     }
