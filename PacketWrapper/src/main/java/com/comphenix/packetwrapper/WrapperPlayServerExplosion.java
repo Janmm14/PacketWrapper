@@ -41,8 +41,8 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 	 * 
 	 * @return The current X
 	 */
-	public double getX() {
-		return handle.getDoubles().read(0);
+	public float getX() {
+		return handle.getFloat().read(0);
 	}
 
 	/**
@@ -50,8 +50,8 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 	 * 
 	 * @param value - new value.
 	 */
-	public void setX(double value) {
-		handle.getDoubles().write(0, value);
+	public void setX(float value) {
+		handle.getFloat().write(0, value);
 	}
 
 	/**
@@ -59,8 +59,8 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 	 * 
 	 * @return The current Y
 	 */
-	public double getY() {
-		return handle.getDoubles().read(1);
+	public float getY() {
+		return handle.getFloat().read(1);
 	}
 
 	/**
@@ -69,7 +69,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 	 * @param value - new value.
 	 */
 	public void setY(double value) {
-		handle.getDoubles().write(1, value);
+		handle.getFloat().write(1, value);
 	}
 
 	/**
@@ -78,7 +78,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 	 * @return The current Z
 	 */
 	public double getZ() {
-		return handle.getDoubles().read(2);
+		return handle.getFloat().read(2);
 	}
 
 	/**
@@ -87,7 +87,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 	 * @param value - new value.
 	 */
 	public void setZ(double value) {
-		handle.getDoubles().write(2, value);
+		handle.getFloat().write(2, value);
 	}
 
 	/**
@@ -98,7 +98,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 	 * @return The current Radius
 	 */
 	public float getRadius() {
-		return handle.getFloat().read(0);
+		return handle.getFloat().read(3);
 	}
 
 	/**
@@ -107,7 +107,7 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 	 * @param value - new value.
 	 */
 	public void setRadius(float value) {
-		handle.getFloat().write(0, value);
+		handle.getFloat().write(3, value);
 	}
 
 	/**
@@ -145,27 +145,27 @@ public class WrapperPlayServerExplosion extends AbstractPacket {
 	}
 
 	public float getPlayerVelocityX() {
-		return handle.getFloat().read(1);
+		return handle.getFloat().read(4);
 	}
 
 	public void setPlayerVelocityX(float value) {
-		handle.getFloat().write(1, value);
+		handle.getFloat().write(4, value);
 	}
 
 	public float getPlayerVelocityY() {
-		return handle.getFloat().read(2);
+		return handle.getFloat().read(5);
 	}
 
 	public void setPlayerVelocityY(float value) {
-		handle.getFloat().write(2, value);
+		handle.getFloat().write(5, value);
 	}
 
 	public float getPlayerVelocityZ() {
-		return handle.getFloat().read(3);
+		return handle.getFloat().read(6);
 	}
 
 	public void setPlayerVelocityZ(float value) {
-		handle.getFloat().write(3, value);
+		handle.getFloat().write(6, value);
 	}
 
 }
